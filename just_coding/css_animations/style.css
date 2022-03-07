@@ -1,0 +1,61 @@
+body {
+    background-color: #333333;
+}
+
+.d-1 {
+    font-size: 0;
+    margin: 0 auto;
+    width: 200px;
+    height: 150px;
+    background-color: #7a956b;
+    transition: all 2s linear;
+}
+
+.d-1:hover {
+    background-color: red;
+    width: calc(50% + 10px);
+    font-size: 48px;
+    text-align: center;
+}
+
+.d-2 {
+    margin: 10px auto;
+    width: 200px;
+    height: 130px;
+    background-color: cornflowerblue;
+    box-shadow: 10px 10px 5px 1px rgba(179, 255, 0, 0.99);
+    transition: all 1.5s cubic-bezier(0, .98, .86, .08);
+}
+
+.d-2:hover {
+    width: calc(40% + 10px);
+    background-color: rgba(179, 255, 0, 0.99);
+    box-shadow: 0 0 0 0;
+}
+
+.d-3 {
+    position: relative;
+    margin: 50px auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    left: 0;
+    animation: circle-goes-bruh 3s linear infinite alternate 0s forwards;
+}
+
+.container:hover .d-3 {
+    animation-play-state: paused;
+}
+
+@keyframes circle-goes-bruh {
+    0% {
+        left: 0
+    }
+    50%{
+        border-radius: 0;
+    }
+    100% {
+        left: 500px;
+    }
+}

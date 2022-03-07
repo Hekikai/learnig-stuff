@@ -1,0 +1,20 @@
+Есть функция, которая принимает массив строк (запросы); 
+далее принимает фабрику по созданию ответов;
+
+ответ - это сущность, которая содержит в себе: тип ответа, результат.
+Я должен вернуть массив ответов на каждый запрос.
+
+Типы ответов: символьный, числовой.
+
+class Response {
+	constructor(responce_type, response_body) {
+		this.responce_type = responce_type;
+		this.response_body = response_body;
+	}
+}
+
+NumericResponseFacotry, SymbolicResponseFactory
+create(request)
+
+Response[] process(['123', 'asdcsds', '12dsaca'], responceFactory);
+
