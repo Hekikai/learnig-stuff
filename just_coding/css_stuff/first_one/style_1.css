@@ -1,0 +1,19 @@
+
+/* 1. Отступ между элементами в одну строку */
+body {
+    font: 14px/1.5 serif;
+}
+
+li:nth-child(n+2) {
+    margin-top: 1.5em;
+}
+
+/* 2. Отступ между парами элементов размером в одну строку */
+
+body {
+    font: 14px/1.5 serif;
+}
+
+li:nth-child(2n+3) {
+    margin-top: 1.5em;
+}

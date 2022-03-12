@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #333333;
+    color: white;
+}
+
+.d-1 {
+    text-align: center
+}
+
+.d-1 p {
+    text-align: left;
+}
