@@ -10,7 +10,7 @@ body {
 }
 
 .child {
-    background-color: var(--div-background-color);
+    background-color: var(--div-background-color) !important;
     color: var(--text-color);
 }
 
