@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post</title>
+</head>
+<body>
+
+<form id="form">
+    <input type="text" placeholder="Enter your message:" name="message">
+    <input type="submit" value="Submit">
+</form>
+
+<iframe id="iframe" src="iframe.html" ></iframe>
+<script>
+	form.addEventListener('submit', function() {
+		iframe.contentWindow.postMessage(this.message.value, '*');
+		return false;
+	})
+</script>
+
+</body>
+</html>
