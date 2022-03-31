@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+dl {
+  margin: 0;
+  padding: 24px 0 0 0;
+}
+
+dt {
+  margin: 0;
+  padding: 2px 0 0 12px;
+  position: sticky;
+  top: -1px;
+  font: bold 18px/21px Helvetica, Arial, sans-serif;
+  background: #B8C1C8;
+  border-bottom: 1px solid #989EA4;
+  border-top: 1px solid #717D85;
+  color: #FFF;
+}
+
+dd {
+  margin: 0;
+  padding: 0 0 0 16px;
+  font: bold 25px/50px Helvetica, Arial, sans-serif;
+  white-space: nowrap;
+}
+
+dd + dd {
+  border-top: 1px solid #CCC;
+}
